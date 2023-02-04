@@ -8,6 +8,8 @@ const getBaseUrl = () => {
   }
   if (process.env.VERCEL_URL) {
     return `https://${process.env.VERCEL_URL}`; // SSR should use vercel url
+  } else if (process.env.GITPOD_WORKSPACE_UR) {
+    return `https://${process.env.GITPOD_WORKSPACE_UR}`
   }
   return `http://localhost:${process.env.PORT ?? 3000}`; // dev SSR should use localhost
 };
