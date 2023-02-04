@@ -4,7 +4,7 @@ image:
 tasks:
   - name: Script Task
     init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
-    command: echo 'start script'
+    command: yarn --frozen-lockfile
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
@@ -14,7 +14,6 @@ ports:
     onOpen: open-preview
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
-
 vscode:
   extensions:
     - mhutchie.git-graph
@@ -28,3 +27,4 @@ vscode:
     - bradlc.vscode-tailwindcss
     - Gruntfuggly.todo-tree
     - ZixuanChen.vitest-explorer
+    - Prisma.prisma

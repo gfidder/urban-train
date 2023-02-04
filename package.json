@@ -8,6 +8,10 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.1.2"
+    "@nuxtjs/tailwindcss": "^6.3.1",
+    "nuxt": "^3.1.2",
+    "prettier": "^2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "webpack": "^5.0.0"
   }
 }
